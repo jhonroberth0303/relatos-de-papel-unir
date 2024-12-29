@@ -15,7 +15,7 @@ const Navigation = () => {
         <header>
             <nav>
                 <div className="left-section">
-                    <img src="src/images/icon.png" alt="#"/>
+                    <img src="/img/icon.png" alt="#"/>
                     <h2>Relatos de Papel</h2>
                 </div>
                 <div className="search"/>
@@ -23,10 +23,10 @@ const Navigation = () => {
                     <li><a className="item-text">Tiendas fisicas</a></li>
                     <li><a className="item-text">Eventos</a></li>
                     <li><a className="item-text"> Ayuda</a></li>
-                    <img className="item-shopping-cart" src="src/components/navigation/img/shopping-and-commerce.png"
+                    <img className="item-shopping-cart" src="../../../public/img/shopping-and-commerce.png"
                          onClick={toggleCartVisibility} alt="#"/>
                     {isCartVisible && <ShoppingCart/>}
-                    <img to="/signup" className="item-shopping-cart" src="src/components/navigation/img/usuario.png"/>
+                    <img to="/signup" className="item-shopping-cart" src="../../../public/img/usuario.png"/>
                 </ul>
             </nav>
         </header>

@@ -4,7 +4,7 @@ import "./detail.css";
 import {booksInitialState, reducerCart} from "../../reducers/shoppingCart_reducer.jsx";
 import TYPES from "../../reducers/actionTypes.jsx";
 
-const IMG_URL = "../src/catalog/";
+const IMG_URL = "/catalog/";
 
 const Detail = (props) => {
 
@@ -24,7 +24,7 @@ const Detail = (props) => {
         <div className={`modal ${isModalDetailOpen ? 'open' : ''}`} id={"myModal2" + detail.ISBN}>
             <div className="modal-content">
                 <span id={"close" + detail.ISBN} onClick={handleClose}>
-                    <img src="src/images/close.svg" alt="close"/>
+                    <img src="../../images/close.svg" alt="close"/>
                 </span>
                 <div className="modal-poster">
                     <img src={IMG_URL + detail.image_path} alt={detail.title}/>
