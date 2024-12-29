@@ -1,15 +1,7 @@
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
 import './navigation.css';
-import ShoppingCart from "../shopping-cart/shopping-cart.jsx";
+import Cart from "../cart/cart.jsx";
 
 const Navigation = () => {
-
-    const [isCartVisible, setIsCartVisible] = useState(false);
-
-    const toggleCartVisibility = () => {
-        setIsCartVisible(!isCartVisible);
-    };
 
     return (
         <header>
@@ -23,9 +15,7 @@ const Navigation = () => {
                     <li><a className="item-text">Tiendas fisicas</a></li>
                     <li><a className="item-text">Eventos</a></li>
                     <li><a className="item-text"> Ayuda</a></li>
-                    <img className="item-shopping-cart" src="/img/shopping-and-commerce.png"
-                         onClick={toggleCartVisibility} alt="#"/>
-                    {isCartVisible && <ShoppingCart/>}
+                    <Cart/>
                     <img to="/signup" className="item-shopping-cart" src="/img/usuario.png"/>
                 </ul>
             </nav>

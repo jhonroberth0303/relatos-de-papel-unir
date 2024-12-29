@@ -4,6 +4,7 @@ export const booksInitialState = {
     books: [],
     cart: [],
     totalPrice: 0,
+    numberBooks: 0
 }
 
 export const reducerCart = (state, action) => {
@@ -18,23 +19,38 @@ export const reducerCart = (state, action) => {
                     book.ISBN === action.payload.ISBN).quantity + 1;
             }
 
+            state.numberBooks =  state.cart.reduce((acc, book) => acc + (book.quantity), 0)
             return{
-                ...state
+                ...state,
+
             }
         }
         case TYPES.DELETE_ALL_FROM_CART:
-            return booksInitialState;
-        case TYPES.DELETE_PRODUCT_FROM_CART:{
-            let newList = state.cart.filter((book) => book.ISBN !== action.payload.ISBN)
+            state = booksInitialState
             return {
-                ...state,
-                cart: newList
+                ...state
+            };
+        case TYPES.DELETE_PRODUCT_FROM_CART:{
+            let newBook = state.cart.find((book) => book.ISBN === action.payload.ISBN)
+            const index = state.cart.indexOf(newBook);
+            if (index > -1) {
+                state.cart.splice(index, 1);
+                state.numberBooks = state.cart.reduce((acc, book) => acc + (book.quantity), 0)
+            }
+            return {
+                ...state
             };
         }
         case TYPES.CALCULATE_TOTAL_PRICE:
+            state.totalPrice = state.cart.reduce((acc, book) => acc + (book.price * book.quantity), 0)
             return {
-                ...state,
-                totalPrice: state.cart.reduce((acc, book) => acc + (book.price * book.quantity), 0),
+                ...state
+            };
+
+        case TYPES.CALCULATE_TOTAL_BOOKS:
+            state.numberBooks = state.cart.reduce((acc, book) => acc + (book.quantity), 0)
+            return {
+                ...state
             };
         default:
             return state;

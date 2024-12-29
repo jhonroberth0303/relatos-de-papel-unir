@@ -1,0 +1,14 @@
+.cart {
+    background: #161f26;
+    position: relative;
+}
+
+.cart-count {
+    top: 0;
+    right: 0;
+    background: red;
+    color: white;
+    border-radius: 50%;
+    padding: 0.5rem;
+    font-size: 0.75rem;
+}

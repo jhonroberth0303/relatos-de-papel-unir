@@ -55,6 +55,7 @@ function Library() {
                                 <Books
                                     key={book.ISBN}
                                     {...book}
+                                    quantity={1}
                                     handleClickBook={handleClickBook}
                                     handleAddToShoppingCart={handleAddToShoppingCart}
                                 />

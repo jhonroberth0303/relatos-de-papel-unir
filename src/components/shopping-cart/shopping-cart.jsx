@@ -13,8 +13,10 @@ const ShoppingCart = () => {
         dispatch({ type: TYPES.DELETE_PRODUCT_FROM_CART, payload: book });
     };
 
-    const updateBooksQuantity = (book) => {
+    const updateBooksQuantity = (index, book, quantity) => {
         dispatch({ type: TYPES.ADD_TO_CART, payload: book });
+        console.log("..................")
+        console.log(state.cart)
     };
 
     const handleCheckout = () => {
@@ -44,7 +46,7 @@ const ShoppingCart = () => {
                                 type="number"
                                 value={book.quantity}
                                 onChange={(e) =>
-                                    updateBooksQuantity(book, parseInt(e.target.value))}
+                                    updateBooksQuantity(index, book, parseInt(e.target.value))}
                             />
                         </li>
                     ))}
