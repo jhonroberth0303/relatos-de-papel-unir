@@ -1,0 +1,80 @@
+.modal {
+    position: fixed;
+    z-index: 10000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--clr-dark);
+    overflow: visible;
+    display: none;
+}
+
+.open {
+    display: block;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid var(--clr-light);
+    width: 80%;
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 3;
+}
+
+.modal-content > * {
+    padding: .5em;
+}
+
+.close {
+    color: var(--clr-light);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: var(--clr-dark);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-content span {
+    grid-column: auto;
+    grid-row: 2;
+    text-align: right;
+}
+
+.modal-poster {
+    grid-column: 1 / 1;
+    grid-row: 2 / 2;
+}
+
+.modal-info {
+    grid-column: 2 / 2;
+    grid-row: 2 / 2;
+}
+
+.releasedate {
+    padding-top: 1em;
+}
+
+.add-to-cart{
+    width: 100%;
+    border-radius: 0px;
+}
+
+@media screen and (max-width: 425px) {
+    .modal-content span{
+        grid-row: 1;
+    }
+
+    .modal-info {
+        grid-column: 1 / 2;
+        grid-row: 3 / 3;
+    }
+}

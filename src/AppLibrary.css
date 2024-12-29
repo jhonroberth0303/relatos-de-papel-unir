@@ -1,0 +1,96 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#root {
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.container {
+  background: #fff;
+  width: 100%;
+  margin: 10px auto;
+  overflow: hidden;
+}
+
+header {
+  background: #fff;;
+}
+
+.main {
+  background: #fff;
+  float: left;
+}
+
+.main .imagen {
+  width: 100%;
+}
+
+.main .imagen img {
+  width: 100%;
+  vertical-align: top;
+}
+
+.main .post {
+  padding: 40px;
+
+}
+
+.main .post article h2 {
+  margin-bottom: 20px;
+  color: #424242
+}
+
+.main .post article p {
+  margin-bottom: 15px;
+  line-height: 27px;
+}
+
+aside {
+  width: 300px;
+  float: left;
+  background: #161f26;
+  padding: 20px;
+  color: #fff;
+}
+
+aside .widget {
+  margin-bottom: 20px;
+  width: 100%;
+
+}
+
+aside .widget .titulo {
+  color: #f88000;
+  border-bottom: 1px solid #ff8000;
+  margin_bottom: 10px;
+}
+
+aside .widget ul {
+  list-style: none;
+}
+
+aside .widget ul li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 10px 0;
+}
+
+aside .widget ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+aside .widget ul li a:hover {
+  color: #8f8f8f;
+}
+
+aside .widget p {
+  line-height: 27px;
+}
+

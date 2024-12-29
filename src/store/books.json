@@ -1,0 +1,302 @@
+[
+  {
+    "price": 30,
+    "title": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "published": 1960,
+    "genre": "Ficción",
+    "ISBN": "978-0-06-112008-4",
+    "image_path": "/100.jpg",
+    "summary": "Una novela que explora la injusticia racial en el sur de Estados Unidos a través de los ojos de una niña."
+  },
+  {
+    "price": 30,
+    "title": "1984",
+    "author": "George Orwell",
+    "published": 1949,
+    "genre": "Distopía",
+    "ISBN": "978-0-452-28423-4",
+    "image_path": "/101.jpg",
+    "summary": "Una novela que describe una sociedad totalitaria bajo la vigilancia constante del 'Gran Hermano'."
+  },
+  {
+    "price": 30,
+    "title": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "published": 1813,
+    "genre": "Romance",
+    "ISBN": "978-0-19-953556-9",
+    "image_path": "/102.jpg",
+    "summary": "Una historia de amor y malentendidos en la Inglaterra del siglo XIX."
+  },
+  {
+    "price": 30,
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "published": 1925,
+    "genre": "Ficción",
+    "ISBN": "978-0-7432-7356-5",
+    "image_path": "/103.jpg",
+    "summary": "Una crítica a la sociedad estadounidense de los años 20, centrada en la figura de Jay Gatsby."
+  },
+  {
+    "price": 30,
+    "title": "Moby-Dick",
+    "author": "Herman Melville",
+    "published": 1851,
+    "genre": "Aventura",
+    "ISBN": "978-0-14-243724-7",
+    "image_path": "/104.jpg",
+    "summary": "La obsesiva búsqueda del capitán Ahab por vengarse de la ballena blanca Moby Dick."
+  },
+  {
+    "price": 30,
+    "title": "War and Peace",
+    "author": "Leo Tolstoy",
+    "published": 1869,
+    "genre": "Ficción histórica",
+    "ISBN": "978-0-14-044793-4",
+    "image_path": "/105.jpg",
+    "summary": "Una extensa novela que narra la vida de varias familias aristocráticas rusas durante las guerras napoleónicas."
+  },
+  {
+    "price": 30,
+    "title": "The Catcher in the Rye",
+    "author": "J.D. Salinger",
+    "published": 1951,
+    "genre": "Ficción",
+    "ISBN": "978-0-316-76948-8",
+    "image_path": "/106.jpg",
+    "summary": "La historia de Holden Caulfield, un adolescente que enfrenta la transición a la adultez."
+  },
+  {
+    "price": 30,
+    "title": "The Hobbit",
+    "author": "J.R.R. Tolkien",
+    "published": 1937,
+    "genre": "Fantasía",
+    "ISBN": "978-0-618-00221-3",
+    "image_path": "/107.jpg",
+    "summary": "Las aventuras de Bilbo Bolsón en su viaje para ayudar a un grupo de enanos a recuperar su hogar."
+  },
+  {
+    "price": 30,
+    "title": "Fahrenheit 451",
+    "author": "Ray Bradbury",
+    "published": 1953,
+    "genre": "Distopía",
+    "ISBN": "978-0-7432-4722-1",
+    "image_path": "/108.jpg",
+    "summary": "Una sociedad donde los libros están prohibidos y los bomberos queman cualquier libro encontrado."
+  },
+  {
+    "price": 30,
+    "title": "Jane Eyre",
+    "author": "Charlotte Brontë",
+    "published": 1847,
+    "genre": "Romance gótico",
+    "ISBN": "978-0-14-144114-6",
+    "image_path": "/109.jpg",
+    "summary": "La vida y desafíos de Jane Eyre, una huérfana que se convierte en institutriz y se enamora de su empleador."
+  },
+  {
+    "price": 30,
+    "title": "Brave New World",
+    "author": "Aldous Huxley",
+    "published": 1932,
+    "genre": "Distopía",
+    "ISBN": "978-0-06-085052-4",
+    "image_path": "/110.jpg",
+    "summary": "Una visión de un futuro donde la humanidad es controlada a través de la tecnología y la manipulación genética."
+  },
+  {
+    "price": 30,
+    "title": "The Lord of the Rings",
+    "author": "J.R.R. Tolkien",
+    "published": 1954,
+    "genre": "Fantasía épica",
+    "ISBN": "978-0-618-00222-0",
+    "image_path": "/111.jpg",
+    "summary": "La épica aventura de Frodo Bolsón para destruir el Anillo Único y salvar la Tierra Media."
+  },
+  {
+    "price": 30,
+    "title": "The Alchemist",
+    "author": "Paulo Coelho",
+    "published": 1988,
+    "genre": "Ficción",
+    "ISBN": "978-0-06-112241-5",
+    "image_path": "/112.jpg",
+    "summary": "La travesía de un joven pastor andaluz en busca de su leyenda personal y tesoro en las pirámides de Egipto."
+  },
+  {
+    "price": 30,
+    "title": "Crime and Punishment",
+    "author": "Fyodor Dostoevsky",
+    "published": 1866,
+    "genre": "Ficción psicológica",
+    "ISBN": "978-0-14-044913-6",
+    "image_path": "/113.jpg",
+    "summary": "La lucha interna de un joven estudiante después de cometer un asesinato y su búsqueda de redención."
+  },
+  {
+    "price": 30,
+    "title": "The Odyssey",
+    "author": "Homero",
+    "published": "Siglo VIII a.C.",
+    "genre": "Épica",
+    "ISBN": "978-0-14-026886-7",
+    "image_path": "/114.jpg",
+    "summary": "Las aventuras de Odiseo en su largo viaje de regreso a casa después de la guerra de Troya."
+  },
+  {
+    "price": 30,
+    "title": "The Divine Comedy",
+    "author": "Dante Alighieri",
+    "published": 1320,
+    "genre": "Poesía épica",
+    "ISBN": "978-0-14-044895-5",
+    "image_path": "/115.jpg",
+    "summary": "El viaje alegórico de Dante a través del Infierno, el Purgatorio y el Paraíso."
+  },
+  {
+    "price": 30,
+    "title": "The Brothers Karamazov",
+    "author": "Fyodor Dostoevsky",
+    "published": 1880,
+    "genre": "Ficción filosófica",
+    "ISBN": "978-0-14-044924-2",
+    "image_path": "/116.jpg",
+    "summary": "La compleja relación entre un padre y sus tres hijos, explorando temas de fe, duda y moralidad."
+  },
+  {
+    "price": 30,
+    "title": "Wuthering Heights",
+    "author": "Emily Brontë",
+    "published": "1847",
+    "genre": "Gothic Fiction, Tragedy, Romance",
+    "ISBN": "978-0141439556",
+    "image_path": "/117.jpg",
+    "summary": "A tale of love, revenge, and betrayal set on the Yorkshire moors, exploring the tumultuous relationship between Heathcliff and Catherine Earnshaw."
+  },
+  {
+    "price": 30,
+    "title": "The Picture of Dorian Gray",
+    "author": "Oscar Wilde",
+    "published": "1890",
+    "genre": "Philosophical Fiction, Gothic Fiction",
+    "ISBN": "978-0141439570",
+    "image_path": "/118.jpg",
+    "summary": "A young man, Dorian Gray, sells his soul to maintain eternal youth while his portrait ages, reflecting the corruption of his spirit."
+  },
+  {
+    "price": 30,
+    "title": "Anna Karenina",
+    "author": "Leo Tolstoy",
+    "published": "1877",
+    "genre": "Realist Fiction",
+    "ISBN": "978-1853262715",
+    "image_path": "/119.jpg",
+    "summary": "A tragic love story set in 19th-century Russia, detailing the consequences of an affair between Anna Karenina and Count Vronsky."
+  },
+  {
+    "price": 30,
+    "title": "Don Quixote",
+    "author": "Miguel de Cervantes",
+    "published": "1605",
+    "genre": "Satirical Fiction, Adventure",
+    "ISBN": "978-0060934347",
+    "image_path": "/120.jpg",
+    "summary": "The story of a delusional knight, Don Quixote, and his loyal squire, Sancho Panza, as they embark on fantastical adventures."
+  },
+  {
+    "price": 30,
+    "title": "Catch-22",
+    "author": "Joseph Heller",
+    "published": "1961",
+    "genre": "Satirical Fiction, War Fiction",
+    "ISBN": "978-1451626650",
+    "image_path": "/121.jpg",
+    "summary": "A darkly comedic tale of a World War II bomber squadron, exposing the absurdities of war and bureaucratic logic."
+  },
+  {
+    "price": 30,
+    "title": "The Grapes of Wrath",
+    "author": "John Steinbeck",
+    "published": "1939",
+    "genre": "Realist Fiction",
+    "ISBN": "978-0143039433",
+    "image_path": "/122.jpg",
+    "summary": "The story of the Joad family as they journey west during the Great Depression in search of a better life."
+  },
+  {
+    "price": 30,
+    "title": "The Iliad",
+    "author": "Homer",
+    "published": "8th Century BC",
+    "genre": "Epic Poetry",
+    "ISBN": "978-0140275360",
+    "image_path": "/123.jpg",
+    "summary": "An ancient Greek epic detailing the events of the Trojan War, focusing on the wrath of Achilles and its consequences."
+  },
+  {
+    "price": 30,
+    "title": "Les Misérables",
+    "author": "Victor Hugo",
+    "published": "1862",
+    "genre": "Historical Fiction",
+    "ISBN": "978-0451419439",
+    "image_path": "/124.jpg",
+    "summary": "A sweeping tale of love, justice, and redemption set against the backdrop of revolutionary France."
+  },
+  {
+    "price": 30,
+    "title": "The Count of Monte Cristo",
+    "author": "Alexandre Dumas",
+    "published": "1844",
+    "genre": "Adventure, Historical Fiction",
+    "ISBN": "978-0140449266",
+    "image_path": "/125.jpg",
+    "summary": "A story of betrayal, revenge, and redemption as Edmond Dantès transforms into the enigmatic Count of Monte Cristo."
+  },
+  {
+    "price": 30,
+    "title": "The Sun Also Rises",
+    "author": "Ernest Hemingway",
+    "published": "1926",
+    "genre": "Modernist Fiction",
+    "ISBN": "978-0743297332",
+    "image_path": "/126.jpg",
+    "summary": "A group of expatriates travel from Paris to Spain, exploring themes of love, disillusionment, and the Lost Generation."
+  },
+  {
+    "price": 30,
+    "title": "The Old Man and the Sea",
+    "author": "Ernest Hemingway",
+    "published": "1952",
+    "genre": "Allegorical Fiction",
+    "ISBN": "978-0684801223",
+    "image_path": "/127.jpg",
+    "summary": "An old Cuban fisherman struggles with a giant marlin in an epic battle of endurance and will."
+  },
+  {
+    "price": 30,
+    "title": "A Tale of Two Cities",
+    "author": "Charles Dickens",
+    "published": "1859",
+    "genre": "Historical Fiction",
+    "ISBN": "978-1503219706",
+    "image_path": "/128.jpg",
+    "summary": "A story of love and sacrifice during the French Revolution, centered around London and Paris."
+  },
+  {
+    "price": 30,
+    "title": "Great Expectations",
+    "author": "Charles Dickens",
+    "published": "1861",
+    "genre": "Bildungsroman",
+    "ISBN": "978-1503275188",
+    "image_path": "/129.jpg",
+    "summary": "The life and growth of Pip, an orphan, as he navigates ambition, love, and self-discovery in Victorian England."
+  }
+]

@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --clr-light: #BABABA;
+    --clr-dark: #2e2e2e;
+
+    --ff-primary: 'Pathway Gothic One', sans-serif;
+
+    --fw-thin: 100;
+    --fw-reg: 400;
+    --fw-bold: 700;
+
+    --fs-h1: calc(48px + (52 - 48) * ((100vw - 375px) / (2560 - 375)));
+    --fs-h2: calc(36px + (50 - 36) * ((100vw - 375px) / (2560 - 375)));
+    --fs-h3: calc(20px + (34 - 20) * ((100vw - 375px) / (2560 - 375)));
+    --fs-body: calc(16px + (30 - 16) * ((100vw - 375px) / (2560 - 375)));
+
+    --bs:   0.25em 0.25em 0.75em rgba(0,0,0,.25),
+    0.125em 0.125em 0.25em rgba(0,0,0,.25);
+
+    --clr-green: #90ee90;
+    --clr-orange: #FFA500;
+    --clr-red: #FF5757;
+}
+
+html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    background: var(--clr-light);
+    color: var(--clr-dark);
+    margin: 0;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-body);
+    line-height: 1.6;
+    transition: all .5s ease-out;
+}
+
+button {
+    font-family: inherit;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+section {
+    padding: 0 2em;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+strong {font-weight: var(--fw-bold);}
+
+:focus {
+    outline: 3px solid var(--clr-dark);
+    outline-offset: 3px;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1;
+    margin: 0;
+}
+
+h1 {font-size: var(--fs-h1)}
+h2 {font-size: var(--fs-h2)}
+h3 {font-size: var(--fs-h3)}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.dark {
+    --clr-light: #2e2e2e;
+    --clr-dark: #bababa;
+    --clr-green: #008800;
+    --clr-red: #bf0000;
+    --clr-orange: #cc5500;
+}
+
+.dark .topnav-logo img {
+    filter: invert(75%) sepia(0%) saturate(0%) hue-rotate(56deg) brightness(91%) contrast(91%);
+}
