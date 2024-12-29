@@ -3,9 +3,9 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./carousel.css"
 
 const images = [
-    "src/components/carousel/images/library-theme-slide3.png",
-    "src/components/carousel/images/library-theme-slide4.png",
-    "src/components/carousel/images/library-theme-slide5.png",
+    "/carousel/library-theme-slide3.png",
+    "/carousel/library-theme-slide4.png",
+    "/carousel/library-theme-slide5.png",
 ];
 
 function CarouselLibrary() {
