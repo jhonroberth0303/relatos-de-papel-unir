@@ -1,5 +1,5 @@
 import React from 'react';
-import './AppLibrary.css'
+import './App.css'
 import Navigation from "./components/navigation/navigation.jsx";
 import CarouselLibrary from "./components/carousel/carousel.jsx";
 import Library from "./components/library/library.jsx";
