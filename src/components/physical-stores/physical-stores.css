@@ -1,0 +1,31 @@
+.physical-stores {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+}
+
+.physical-stores h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.physical-stores p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.physical-stores ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.physical-stores li {
+    margin-bottom: 10px;
+    color: #555;
+}
