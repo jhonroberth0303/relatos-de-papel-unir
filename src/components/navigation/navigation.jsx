@@ -14,7 +14,6 @@ const Navigation = () => {
 
                     <h2>Relatos de Papel</h2>
                 </div>
-                <div className="search"/>
                 <ul className="right-section">
                     <li><Link to="/physical-stores" className="item-text">Tiendas fisicas</Link></li>
                     <li><a className="item-text">Eventos</a></li>
