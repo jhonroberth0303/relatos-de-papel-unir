@@ -1,5 +1,5 @@
 import {func, number, shape, string} from "prop-types";
-import {useReducer, useState} from 'react';
+import {useEffect, useReducer, useState} from 'react';
 import "./detail.css";
 import {booksInitialState, reducerCart} from "../../reducers/shoppingCart_reducer.jsx";
 import TYPES from "../../reducers/actionTypes.jsx";
