@@ -1,7 +1,7 @@
 import {func, number, shape, string} from "prop-types";
 import "./books.css"
 
-const IMG_URL = "/catalog/";
+const IMG_URL = "/catalog";
 
 function getColor(genre) {
     if (genre == "Ficción") {
