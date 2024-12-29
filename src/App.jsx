@@ -6,7 +6,7 @@ import Library from "./components/library/library.jsx";
 import Footer from "./components/footer/footer.jsx";
 import AppRouter from "./Router";
 
-function AppLibrary() {
+function App() {
 
   return (
       <>
@@ -21,4 +21,4 @@ function AppLibrary() {
   )
 }
 
-export default AppLibrary
+export default App
