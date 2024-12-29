@@ -16,7 +16,7 @@ const Navigation = () => {
                 </div>
                 <div className="search"/>
                 <ul className="right-section">
-                    <li><a className="item-text">Tiendas fisicas</a></li>
+                    <li><Link to="/physical-stores" className="item-text">Tiendas fisicas</Link></li>
                     <li><a className="item-text">Eventos</a></li>
                     <li><Link to="/about-us" className="item-text">Acerca de nosotros</Link></li>
                     <Cart/>

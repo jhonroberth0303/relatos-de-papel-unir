@@ -1,7 +1,17 @@
-import React, { useState } from 'react';
+import React, {useCallback, useState} from 'react';
 import './sign-up.css';
+import {useNavigate} from "react-router-dom";
+import InactivityDetector from "../../utils/inactivity-detector.js";
 
 const SignUp = () => {
+
+    const navigate = useNavigate();
+
+    const handleInactivity = useCallback(() => {
+        navigate('/');
+    }, [navigate]);
+
+
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -24,6 +34,7 @@ const SignUp = () => {
 
     return (
         <div className="sign-up">
+            <InactivityDetector onInactivity={handleInactivity} />
             <form onSubmit={handleSubmit}>
                 <div className="form-group">
                     <label htmlFor="name">Name</label>
