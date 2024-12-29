@@ -23,10 +23,10 @@ const Navigation = () => {
                     <li><a className="item-text">Tiendas fisicas</a></li>
                     <li><a className="item-text">Eventos</a></li>
                     <li><a className="item-text"> Ayuda</a></li>
-                    <img className="item-shopping-cart" src="../../../public/img/shopping-and-commerce.png"
+                    <img className="item-shopping-cart" src="/img/shopping-and-commerce.png"
                          onClick={toggleCartVisibility} alt="#"/>
                     {isCartVisible && <ShoppingCart/>}
-                    <img to="/signup" className="item-shopping-cart" src="../../../public/img/usuario.png"/>
+                    <img to="/signup" className="item-shopping-cart" src="/img/usuario.png"/>
                 </ul>
             </nav>
         </header>
