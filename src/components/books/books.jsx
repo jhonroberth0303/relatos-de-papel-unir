@@ -1,7 +1,7 @@
 import {func, number, shape, string} from "prop-types";
 import "./books.css"
 
-const IMG_URL = "../src/catalog/";
+const IMG_URL = "/catalog/";
 
 function getColor(genre) {
     if (genre == "Ficción") {
@@ -58,7 +58,7 @@ const Books = (book) => {
                             <div className="overview-header">
                                 <h3>Overview</h3>
                                 <div className="addBtn">
-                                    <img src="src/images/close.svg" alt="close"/>
+                                    <img src="/images/close.svg" alt="close"/>
                                 </div>
                             </div>
                             <p>{book.summary}</p>
