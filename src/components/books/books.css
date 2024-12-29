@@ -1,0 +1,107 @@
+.myBtn {
+    background-color: transparent;
+    padding: 0;
+    border: 0;
+}
+
+.book-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.book {
+    width: 300px;
+    margin: 2rem;
+    border-radius: 3px;
+    background-color: var(--clr-light);
+    position: relative;
+    overflow: hidden;
+    box-shadow: var(--bs);
+}
+
+.book img {
+    width: 100%;
+}
+
+.book-info {
+    color: var(--clr-dark);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem 1rem;
+    letter-spacing: 0.5px;
+}
+
+.book-info h3 {
+    margin-top: 0;
+}
+
+.book-info span {
+    background-color: var(--clr-dark);
+    padding: 0.25em 0.5rem;
+    border-radius: 3px;
+    font-weight: var(--fw-bold);
+    font-size: 125%;
+    line-height: 1.15;
+    font-family: inherit;
+}
+
+.book-info span.green {
+    color: var(--clr-green);
+}
+
+.book-info span.orange {
+    color: var(--clr-orange);
+}
+
+.book-info span.red {
+    color: var(--clr-red);
+}
+
+.overview {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--clr-light);
+    padding: 1rem;
+    max-height: 100%;
+    transform: translateY(101%);
+    transition: transform 400ms ease-in;
+    color: var(--clr-dark);
+}
+
+.overview p {
+    font-size: var(--fs-body);
+    padding: 0;
+    margin: 0;
+    padding-top: .5em;
+}
+
+.overview-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.addBtn {
+    padding-left: 1em;
+    justify-self: flex-end;
+}
+
+.addBtn span {
+    width: 100%;
+    background-color: var(--clr-dark);
+    text-align: center;
+    color: var(--clr-light);
+}
+
+.myBtn:hover .overview {
+    transform: translateY(0);
+}
+
+.add-to-cart{
+    width: 100%;
+    border-radius: 0px;
+}

@@ -1,0 +1,90 @@
+header {
+    width: 100%;
+    height: 100px;
+    background: #FAEAD6;
+}
+
+header nav {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+header nav a:hover {
+    text-decoration: underline;
+    border-radius: 5px;
+    background: #000;
+    color: #fff;
+}
+
+header nav .right-section {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    align-items: center;
+    padding: 25px;
+}
+
+header nav .right-section a {
+    margin-right: 10px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px 20px;
+    color: #000;
+    cursor: pointer;
+}
+
+header nav .right-section .item {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+}
+
+header nav .right-section img {
+    width: 70px;
+    height: 70px;
+}
+
+header nav .right-section img:hover {
+    width: 80px;
+    height: 80px;
+}
+
+header nav .right-section .item-text {
+    color: #fff;
+}
+
+header nav .left-section {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+header nav .left-section img {
+    margin: 10px;
+    width: 110px;
+    height: 110px;
+}
+
+nav .search {
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+}

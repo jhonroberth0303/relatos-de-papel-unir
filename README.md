@@ -1,6 +1,2 @@
-# relatos-de-papel-unir
-Desarrollo Web Ful Stack Unir - Actividad1
-React
-Hooks
-Custom state
-Routing
+# relatos-de-papel
+Topic Desarrollo Web Ful Stack
