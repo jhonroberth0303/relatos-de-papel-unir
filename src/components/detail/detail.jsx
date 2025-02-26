@@ -21,13 +21,13 @@ const Detail = (props) => {
 
     const detail = props.book;
     return (
-        <div className={`modal ${isModalDetailOpen ? 'open' : ''}`} id={"myModal2" + detail.ISBN}>
+        <div className={`modal ${isModalDetailOpen ? 'open' : ''}`} id={"myModal2" + detail.isbn}>
             <div className="modal-content">
-                <span id={"close" + detail.ISBN} onClick={handleClose}>
+                <span id={"close" + detail.isbn} onClick={handleClose}>
                     <img src="/images/close.svg" alt="close"/>
                 </span>
                 <div className="modal-poster">
-                    <img src={IMG_URL + detail.image_path} alt={detail.title}/>
+                    <img src={IMG_URL + detail.image} alt={detail.title}/>
                 </div>
                 <div className="modal-info">
                     <h2>{detail.title}</h2>
@@ -35,9 +35,9 @@ const Detail = (props) => {
                     <h3 className="releasedate">Género</h3>
                     <p>{detail.genre}</p>
                     <h3 className="releasedate">Año de publicación</h3>
-                    <p>{detail.published}</p>
+                    <p>{detail.year}</p>
                     <h3>Resumen</h3>
-                    <p className="modal-overview">{detail.summary}</p>
+                    <p className="modal-overview">{detail.description}</p>
                     <button onClick={() => updateBooksQuantity(detail)} className="add-to-cart">Añadir al carito de compras</button>
                 </div>
             </div>
@@ -52,11 +52,11 @@ Detail.propTypes = {
         price: number.isRequired,
         title: string.isRequired,
         author: string.isRequired,
-        published: number.isRequired,
+        year: number.isRequired,
         genre: string.isRequired,
-        ISBN: string.isRequired,
-        image_path: string.isRequired,
-        summary: string.isRequired,
+        isbn: string.isRequired,
+        image: string.isRequired,
+        description: string.isRequired,
         handleClickBook: func
     })
 };

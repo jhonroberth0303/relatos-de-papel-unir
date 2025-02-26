@@ -27,6 +27,10 @@ const ShoppingCart = () => {
         setIsCheckout(false);
     }, []);
 
+    useEffect(() =>{
+        console.log("Efecto de montaje: Solo se ejecuta una vez")
+    }, []);
+
     return (
         <div className={`shopping-cart ${isCheckout ? 'open' : ''}`}>
             <div className="shopping-cart-right">

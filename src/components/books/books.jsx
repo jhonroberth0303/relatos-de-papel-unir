@@ -24,11 +24,11 @@ const Books = (book) => {
                         price: book.price,
                         title: book.title,
                         author: book.author,
-                        published: book.published,
+                        year: book.year,
                         genre: book.genre,
-                        ISBN: book.ISBN,
-                        image_path: book.image_path,
-                        summary: book.summary
+                        isbn: book.isbn,
+                        image: book.image,
+                        description: book.description
                     })
                 }>Añadir al carrito
                 </button>
@@ -40,16 +40,16 @@ const Books = (book) => {
                             price: book.price,
                             title: book.title,
                             author: book.author,
-                            published: book.published,
+                            year: book.year,
                             genre: book.genre,
-                            ISBN: book.ISBN,
-                            image_path: book.image_path,
-                            summary: book.summary
+                            isbn: book.isbn,
+                            image: book.image,
+                            description: book.description
                         })
                     }
                 >
-                    <button id={`myBtn${book.ISBN}`} className="myBtn">
-                        <img src={IMG_URL + book.image_path} alt={book.title}/>
+                    <button id={`myBtn${book.isbn}`} className="myBtn">
+                        <img src={IMG_URL + book.image} alt={book.title}/>
                         <div className="book-info">
                             <h3>{book.title}</h3>
                             <span className={getColor(book.genre)}>{book.genre}</span>
@@ -61,7 +61,7 @@ const Books = (book) => {
                                     <img src="/images/close.svg" alt="close"/>
                                 </div>
                             </div>
-                            <p>{book.summary}</p>
+                            <p>{book.description}</p>
                         </div>
                     </button>
                 </div>
@@ -76,11 +76,11 @@ Books.propTypes = {
         price: number.isRequired,
         title: string.isRequired,
         author: string.isRequired,
-        published: number.isRequired,
+        year: number.isRequired,
         genre: string.isRequired,
-        ISBN: string.isRequired,
-        image_path: string.isRequired,
-        summary: string.isRequired,
+        isbn: string.isRequired,
+        image: string.isRequired,
+        description: string.isRequired,
         handleClickBook: func,
         handleAddToShoppingCart: func
     })

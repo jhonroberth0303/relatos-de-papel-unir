@@ -6,8 +6,8 @@ import {booksInitialState, reducerCart} from "../../reducers/shoppingCart_reduce
 import TYPES from "../../reducers/actionTypes.jsx";
 import Search from "../search/search.jsx";
 
-const BASE_URL = "https://4l2byv9te4.execute-api.us-east-1.amazonaws.com/stage1";
-const API_URL = BASE_URL + "/books";
+const BASE_URL = "https://spring-cloud-gateway-production-e718.up.railway.app";
+const API_URL = BASE_URL + "/microservice-two/v1/books/all";
 
 function Library() {
 
@@ -22,9 +22,9 @@ function Library() {
         fetch(API_URL)
             .then((res) => res.json())
             .then((data) => {
-                setBooks(data.results);
-                setFilteredBooks(data.results);
-                state.books = data.results;
+                setBooks(data);
+                setFilteredBooks(data);
+                state.books = data;
             });
     }, []);
 
@@ -53,7 +53,7 @@ function Library() {
                         {filteredBooks.length > 0 &&
                             filteredBooks.map((book) => (
                                 <Books
-                                    key={book.ISBN}
+                                    key={book.isbn}
                                     {...book}
                                     quantity={1}
                                     handleClickBook={handleClickBook}
@@ -62,7 +62,7 @@ function Library() {
                             ))}
                     </div>
                     <div className="modal-container">
-                        {showDetail && <Detail key={selectedBook.ISBN} book={selectedBook}/>}
+                        {showDetail && <Detail key={selectedBook.isbn} book={selectedBook}/>}
                     </div>
                 </article>
             </section>

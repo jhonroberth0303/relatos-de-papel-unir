@@ -10,19 +10,19 @@ export const booksInitialState = {
 export const reducerCart = (state, action) => {
     switch (action.type) {
         case TYPES.ADD_TO_CART:{
-            let newBook= state.books.find((book) => book.ISBN === action.payload.ISBN)
-            if((state.cart.find((book) => book.ISBN === action.payload.ISBN) === undefined)){
+            let newBook= state.books.find((book) => book.isbn === action.payload.isbn)
+            if((state.cart.find((book) => book.isbn === action.payload.isbn) === undefined)){
                 newBook.quantity = 1;
                 state.cart.push(newBook)
             } else {
                 newBook.quantity = state.cart.find((book) =>
-                    book.ISBN === action.payload.ISBN).quantity + 1;
+                    book.isbn === action.payload.isbn).quantity + 1;
             }
 
             state.numberBooks =  state.cart.reduce((acc, book) => acc + (book.quantity), 0)
             return{
                 ...state,
-
+                cart
             }
         }
         case TYPES.DELETE_ALL_FROM_CART:
@@ -31,7 +31,7 @@ export const reducerCart = (state, action) => {
                 ...state
             };
         case TYPES.DELETE_PRODUCT_FROM_CART:{
-            let newBook = state.cart.find((book) => book.ISBN === action.payload.ISBN)
+            let newBook = state.cart.find((book) => book.isbn === action.payload.isbn)
             const index = state.cart.indexOf(newBook);
             if (index > -1) {
                 state.cart.splice(index, 1);
